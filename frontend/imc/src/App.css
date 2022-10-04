@@ -1,0 +1,50 @@
+*{
+  color: white;
+}
+body{
+  background-color:black;
+}
+.App {
+  display:flex;
+  flex-direction:column;
+  text-align: center;
+  gap:40px;
+  background-color: blue;
+  width: 30%;
+  height: 50%;
+  padding: 10px;
+  border-radius: 15px;
+}
+.resul {
+  text-align: center;
+}
+p{
+  color: white;
+}
+
+.results {
+  color: white;
+}
+.AppContainer {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  margin-top: 10%;
+}
+
+input{
+  text-align: center;
+  color: black;
+  border: none;
+  margin: auto;
+  width: 180px;
+  height: 40px;
+}
+
+button {
+  background-color: black;
+ margin: auto;
+  width: 150px;
+  height: 30px;
+}
