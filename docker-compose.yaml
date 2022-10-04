@@ -1,0 +1,22 @@
+version: "3"
+services:
+  frontend:
+    build: frontend/imc/
+    restart: on-failure
+    ports:
+      - 3000:3000
+  backend:
+   build: backend/
+   restart: on-failure
+   ports:
+    - 3001:3001
+   environment:
+      - DB_HOST=database
+  database:
+    image: mysql:8.0.29
+    restart: on-failure
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: BdImc
+    ports:
+      - "33063:3306"

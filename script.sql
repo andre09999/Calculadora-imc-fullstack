@@ -1,0 +1,16 @@
+DROP DATABASE IF EXISTS BdImc;
+
+CREATE DATABASE BdImc;
+
+USE BdImc;
+
+CREATE TABLE people (
+    id INT NOT NULL AUTO_INCREMENT,
+    first_name VARCHAR(45) NOT NULL,
+    IMC VARCHAR(60) NOT NULL,
+    Peso VARCHAR(60) NOT NULL,
+    alturaInmetro VARCHAR(20),
+    Data VARCHAR(20),
+    PRIMARY KEY(id)
+);
+
